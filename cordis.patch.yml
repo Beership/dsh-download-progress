@@ -1,0 +1,9 @@
+# dsh-download-progress bundle patch
+# 把本插件插入 DSH 运行时（服务端 cordis 插件 lib/index.mjs）。
+# 客户端 UI（右上角进度条）由 ./client 导出自动进入 Web 客户端，无需在此声明。
+
+- insert:
+    - id: download-progress
+      name: dsh-download-progress
+      config:
+        poll: true

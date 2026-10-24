@@ -1,0 +1,65 @@
+{
+  "name": "dsh-download-progress",
+  "version": "0.3.2",
+  "description": "DeepSeek Harness 下载进度插件：聊天窗口右上角实时进度条（百分比/速度/预计剩余时间/阶段），下载前探测文件大小与预计耗时，支持断点续传 · Live top-right download progress bar for DSH with ETA and resumable downloads",
+  "type": "module",
+  "main": "lib/index.mjs",
+  "exports": {
+    ".": "./lib/index.mjs",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "skills",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md",
+    "docs",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "pack:check": "npm pack --dry-run"
+  },
+  "license": "MIT",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-client-plugin",
+    "download",
+    "progress-bar",
+    "eta",
+    "resume",
+    "断点续传",
+    "下载",
+    "进度条"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beership/dsh-download-progress.git"
+  },
+  "homepage": "https://github.com/Beership/dsh-download-progress#readme",
+  "bugs": {
+    "url": "https://github.com/Beership/dsh-download-progress/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    },
+    "install": {
+      "preferred": "tarball",
+      "tarball": "https://github.com/Beership/dsh-download-progress/releases/latest/download/dsh-download-progress-0.3.2.tgz",
+      "git": "https://github.com/Beership/dsh-download-progress.git"
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
