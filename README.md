@@ -29,7 +29,7 @@ cd dsh-download-progress && npm pack          # -> dsh-download-progress-0.3.2.t
 
 Then in `~/.dsh/profiles/desktop/package.json` add the package to `dependencies` and to `dsh.profile.bundles`, extract the tarball into that profile's `node_modules/dsh-download-progress`, and restart DSH.
 
-Prefer the prebuilt tarball: <https://github.com/Beership/dsh-download-progress/releases/latest/download/dsh-download-progress-0.3.2.tgz>
+Prefer the prebuilt tarball: <https://github.com/Beership/dsh-download-progress/releases/download/v0.3.2/dsh-download-progress-0.3.2.tgz>
 
 ## Usage
 

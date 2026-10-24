@@ -55,7 +55,7 @@
     },
     "install": {
       "preferred": "tarball",
-      "tarball": "https://github.com/Beership/dsh-download-progress/releases/latest/download/dsh-download-progress-0.3.2.tgz",
+      "tarball": "https://github.com/Beership/dsh-download-progress/releases/download/v0.3.2/dsh-download-progress-0.3.2.tgz",
       "git": "https://github.com/Beership/dsh-download-progress.git"
     }
   },
